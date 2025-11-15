@@ -22,7 +22,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          yarn install --frozen-lockfile
+          yarn install --immutable --immutable-cache --check-cache
           yarn build
 
       - name: Upload artifact
